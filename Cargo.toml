@@ -1,0 +1,29 @@
+[package]
+name = "threes_game"
+version = "0.1.1"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+name = "threes_rs"
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+rand = "0.9.2"
+crossterm = "0.29.0"
+log = "0.4.29"
+pyo3 = { version = "0.27.2", features = ["extension-module"] }
+rayon = "1.11.0"
+rmp-serde = "1.1"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0.149"
+macroquad = "0.4"
+linemux = "0.3"
+tokio = { version = "1", features = ["full"] }
+
+[[bin]]
+name = "play_game"
+path = "src/bin/play_game.rs"
+
+[dev-dependencies]
