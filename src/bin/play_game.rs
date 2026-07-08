@@ -532,7 +532,7 @@ fn get_ai_action(env: &ThreesEnv, brain: &NTupleNetwork, epsilon: f64) -> Option
     if random_val < epsilon {
         env.get_random_valid_action()
     } else {
-        env.get_best_action_depth_parallel(brain, 5).0
+        env.get_best_action_depth_parallel(brain, 3).0
     }
 }
 
