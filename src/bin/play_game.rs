@@ -551,7 +551,7 @@ fn window_conf() -> Conf {
 
 #[macroquad::main(window_conf)]
 async fn main() {
-    let brain = match NTupleNetwork::load_from_msgpack("brain_ep_1200000.msgpack") {
+    let brain = match NTupleNetwork::load_from_msgpack("brain_ep_14880000.msgpack") {
         Ok(b) => {
             println!("✅ Loaded brain successfully!");
             Some(b)
