@@ -4,7 +4,7 @@
     "w_empty_override": 0.0,
     "w_merge_override": 0.0,
     "alpha_override": 0.001,
-    "epsilon_override": 0.3,
+    "epsilon_override": 0.2,
     "eval_epsilon_override": 0.0,
     "current_chunk": 80000
 }
